@@ -1,0 +1,18 @@
+import "./app.css";
+import { users } from "./users";
+
+function App() {
+  return (
+    <div className="app">
+      <input type="text" placeholder="Search..." className="search"></input>
+      <ul className="list">
+        {users.map((user) => (
+          <li className="listItem">{user.firstName}</li>
+        ))}
+        
+      </ul>
+    </div> 
+  );
+}
+
+export default App;
